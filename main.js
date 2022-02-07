@@ -31,8 +31,8 @@ if (width<992){
     function my_touch_move(e)
     {
 
-         current_position_of_mouse_x = e.touches[0] - canvas.offsetLeft;
-         current_position_of_mouse_y = e.touches[0] - canvas.offsetTop;
+         current_position_of_mouse_x = e.touches[0].clientX - canvas.offsetLeft;
+         current_position_of_mouse_y = e.touches[0].clientY - canvas.offsetTop;
 
         
         ctx.beginPath();
